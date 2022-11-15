@@ -2,7 +2,7 @@
   <div class="box">
     <h1>Rename Window</h1>
     <form v-on:submit="rename(name)">
-      <input v-model="name" type="text" placeholder="New Name" required>
+      <input @submit.prevent="submit" v-model="name" type="text" placeholder="New Name" required>
       <div class="dummy-spacer"></div>
       <input class="submit-button" type="submit" value="Confirm">
     </form>
